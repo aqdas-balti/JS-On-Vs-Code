@@ -36,3 +36,11 @@ console.log("Actual typeof undefined:", typeof check2); //object
 let valundefinedNumber = Number(check3); //Converted to number
 console.log("Converted val of undefined:", valundefinedNumber); //NaN
 console.log("Converted val typeof undefined:", typeof valundefinedNumber); //number
+console.log("Boolean Starts");
+let isLoggedin = 1;
+console.log("Actual Ans is:", isLoggedin); //1
+console.log("Actual typeof boolean is:", typeof isLoggedin); //number
+
+let booleanval = Boolean(isLoggedin);
+console.log("Converted Ans is:", booleanval); //true
+console.log("Converted typeof Ans is:", typeof booleanval); //boolean
