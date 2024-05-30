@@ -27,3 +27,21 @@ console.log(otherScore2.toPrecision(4)); //244.6
 
 const hundreds = 10000000;
 console.log(hundreds.toLocaleString()); //10,000,000(Its help us to read a number in better readable form)
+
+//++++++++++++++++++++Maths+++++++++++++++++++++
+console.log(Math);
+console.log(Math.abs(-5)); //5 (absolute value alway delayer result in the positive manner)
+console.log(Math.round(5.5678)); //6
+console.log(Math.ceil(6.2)); //7 (It is ceiling means if the no is minor grater than the actual no then round upper to the actual no)
+console.log(Math.floor(5.9)); //5 it takes lower value if the no after point is grater than 5 or not
+console.log(Math.min(4, 3, 5, 1, 6)); //1
+console.log(Math.max(4, 3, 5, 1, 6)); //6
+
+console.log(Math.random()); //In this no will be always in between 0 and 1 like 0.1 0.2 etc no must be random in every execution
+console.log(Math.random() * 10); //Using multiple of 10 shifted to the left sin=de like 0.1223 to 1.0232 etc
+console.log(Math.random() * 10 + 1); //This is the right and formal way no 0 does not appear in the result
+console.log(Math.floor(Math.random() * 10) + 1); //it takes the min value
+
+const min = 10;
+const max = 20;
+console.log(Math.floor(Math.random() * (max - min + 1)) + min);
