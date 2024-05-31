@@ -33,11 +33,11 @@ console.log(newStrings.slice(-6, 3)); //Aqd
 let anotherString = myStrings.slice(-9, 5);
 console.log(anotherString);
 
-let newstringOne = "    Aqdas    ";
-console.log(newstringOne);
-console.log(newstringOne.trim());
+let newStringOne = "    Aqdas    ";
+console.log(newStringOne);
+console.log(newStringOne.trim());
 
 let Url = "https://Aqdas.com//aqdas20%ali";
 console.log(Url.replace("20%", "30%")); //https://Aqdas.com//aqdas30%ali
-console.log(Url.includes("aqdas")); //true
+console.log(Url.includes("Aqdas")); //true
 console.log(myStrings.split("-")); //[ 'Aqdas', 'Ali' ](Array)

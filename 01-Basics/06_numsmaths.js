@@ -4,7 +4,7 @@ console.log(score);
 console.log(typeof score); //number
 
 //Here we are using the objects of the number for using the different properties of a number
-const newScore = new Number(500); //This is the main syntex of a Number Object
+const newScore = new Number(500); //This is the main  of a Number Object
 console.log(newScore); //[Number: 500]
 console.log(__proto__); //{}
 console.log(typeof newScore); //object
