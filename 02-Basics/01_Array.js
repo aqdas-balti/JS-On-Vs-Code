@@ -47,3 +47,28 @@ let myArray5 = [1, 2, 3, 4, 5];
 let newArray1 = myArray5.join();
 console.log(newArray1); //1,2,3,4,5
 console.log(typeof newArray1); //string
+
+//slice and splice
+//In slice end range is not included and its also does not manipulate original array
+let myArray6 = [1, 2, 3, 4, 5];
+console.log("A ", myArray6);
+let newArray2 = myArray6.slice(1, 4);
+//A  [ 1, 2, 3, 4, 5 ]
+console.log("Slice", newArray2); //A  [2, 3, 4] (Stars index 1 and ends index 3)
+console.log("B ", myArray6); //Slice [1, 2, 3, 4, 5](Does not manipulates the actual array)
+//In splice end range is include and its also effects the main array or actual array(Manipulate the actual array the range that you are inserted in the splice is extracted from the actual array)
+let newArray3 = myArray6.splice(1, 4);
+console.log("Splice", newArray3); //Splice [ 2, 3, 4, 5 ]
+console.log("C ", myArray6); //C  [ 1 ]
+
+//Copied from net
+const months = ["Jan", "March", "April", "June"];
+months.splice(1, 0, "Feb");
+// Inserts at index 1
+console.log(months);
+// Expected output: Array ["Jan", "Feb", "March", "April", "June"]
+
+months.splice(4, 2, "May");
+// Replaces 1 element at index 4
+console.log(months);
+// Expected output: Array ["Jan", "Feb", "March", "April", "May"]
